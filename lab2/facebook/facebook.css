@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    margin-bottom:0;
+    margin-top: 100px;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+.left-block,
+.right-block {
+    flex: 1;
+}
+
+.left-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.logo {
+    color: #1877f2;
+    margin: 0;
+    font-size: 72px;
+    margin-top: 10px;
+}
+
+.tagline {
+    margin-top: 0;
+    font-size: 25px;
+    color: #000;
+    white-space: pre-line;
+    text-align: left;
+}
+
+.right-block {
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-left: 40px;
+    height: 250px;
+    width: 150px;
+    margin: 40px;
+    margin-bottom:0;
+}
+
+form {
+    width: auto;
+    margin: 0;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #1877f2;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+
+}
+
+button:hover {
+    background-color: #115293;
+}
+
+hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+p {
+    text-align: center;
+    margin: 10px 0;
+    color: #1877f2;
+    cursor: pointer;
+}
+.create-account-btn {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 60%;
+    margin-bottom: 10px;
+    margin-left:85px
+}
+
+.create-account-btn:hover {
+    background-color: #45a049;
+}
+.additional-text {
+    font-size: 14px;
+    color: #000;
+    margin-top: 0px;
+    margin-left:500px;
+}
+.strong_additional-text:hover{
+    text-decoration: underline;
+
+}
+footer {
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+    margin-top:170px;
+
+}
+
+footer nav {
+    margin-bottom: 10px;
+}
+
+footer nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #1877f2;
+}
+
+footer p {
+    margin: 5px;
+
+}
+
