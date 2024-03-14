@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-Do List Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <aside class="navigation">
+        <h2>Навигация</h2>
+        <button id="filter-all" onclick="filterTasks('all')">Все задачи</button>
+        <button id="filter-completed" onclick="filterTasks('completed')">Завершенные задачи</button>
+        <button id="filter-active" onclick="filterTasks('active')">Активные задачи</button>
+        <button id="clear-completed" onclick="clearCompletedTasks()">Очистить завершенные</button>
+    </aside>
+
+    <main>
+        <header>
+            <h1>TO-Do List Assistant</h1>
+        </header>
+
+        <div id="user-input">
+            <label for="new-task">Новая задача:</label>
+            <input type="text" id="new-task" placeholder="Введите задачу">
+            <button onclick="addTask()">Добавить задачу</button>
+        </div>
+
+        <ul id="tasks-list" class="tasks-list"></ul>
+    </main>
+</div>
+
+<footer>
+    Создано для урока по управлению списком задач
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

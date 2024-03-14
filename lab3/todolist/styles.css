@@ -1,0 +1,150 @@
+/* Общие стили */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Навигация */
+.navigation {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  width: 200px;
+}
+
+.navigation h2 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.navigation button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #555;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.navigation button:hover {
+  background-color: #777;
+}
+
+main {
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 400px;
+
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+#user-input {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: #555;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #777;
+}
+
+.tasks-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.task:last-child {
+  border-bottom: none;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.task span {
+  flex-grow: 1;
+  word-break: break-all;
+}
+.task .edit-button,
+.task .delete-button {
+  display: none;
+}
+
+.task:hover .edit-button,
+.task:hover .delete-button {
+    display: inline-block;
+  }
+
+.edit-button,
+.delete-button {
+  padding: 5px 10px;
+  font-size: 12px;
+  background-color: #555;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.edit-button:hover,
+.delete-button:hover {
+  background-color: #777;
+}
+
+/* Подвал */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-size: 12px;
+}
