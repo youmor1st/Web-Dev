@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div>
+        <h1>{{ category.name }} Details</h1>
+        <div>
+            <h2>{{ category.name }}</h2>
+            <h3>Products in this category:</h3>
+            <ul>
+                {% for product in category.product_set.all %}
+                    <li>{{ product.name }} - Price: {{ product.price }}</li>
+                {% empty %}
+                    <li>No products in this category</li>
+                {% endfor %}
+            </ul>
+            <a href="{% url 'category-list' %}">Back to Categories</a>
+
+        </div>
+    </div>
+{% endblock %}

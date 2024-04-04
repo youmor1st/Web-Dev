@@ -1,0 +1,16 @@
+
+
+{% extends 'base.html' %}
+{% block content %}
+
+
+  <section >
+    <div >
+      <h1>Welcome to SHOP</h1>
+
+      <a href="{% url 'product-list' %}" >Products</a>
+        <a href="{% url 'category-list' %}" >Category</a>
+    </div>
+  </section>
+
+{% endblock %}
